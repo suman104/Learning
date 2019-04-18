@@ -33,6 +33,8 @@ public class PrizeBoxController {
 		}else {
 			prize=inputNum;
 		}
+		if(prize>1000)
+			prize=1000;
 		
 		return new ModelAndView("Show","msg",prize);
 
